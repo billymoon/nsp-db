@@ -4,7 +4,7 @@
   "description": "",
   "main": "advisories.json",
   "scripts": {
-    "start": "npx nsp gather && git add advisories.json && npm version patch"
+    "start": "npx nsp gather && git add advisories.json && git commit -m update && npm version patch"
   },
   "files": [
     "advisories.json"
