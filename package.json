@@ -2,10 +2,13 @@
   "name": "nsp-db",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "advisories.json",
   "scripts": {
     "start": "npx nsp gather"
   },
+  "files": [
+    "advisories.json"
+  ],
   "keywords": [],
   "author": "",
   "license": "ISC"
