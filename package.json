@@ -1,10 +1,10 @@
 {
   "name": "nsp-db",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "description": "",
   "main": "advisories.json",
   "scripts": {
-    "start": "npx nsp gather && git add advisories.json && git commit -m update && npm version patch"
+    "start": "npx nsp gather && git add advisories.json && git commit -m update && npm version --allow-same-version --no-git-tag-version $(npm show nsp-db version) && npm version patch"
   },
   "files": [
     "advisories.json"
