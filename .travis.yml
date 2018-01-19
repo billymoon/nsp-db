@@ -1,0 +1,13 @@
+script:
+- npm start
+branches:
+  only:
+  - master
+deploy:
+  provider: npm
+  email: billy@itaccess.org
+  api_key:
+    secure: sCItecSRk7fWh9VRJ6neu/PVPSdiosdUPpsczL1KFAYhpQCPkfurupUpgL19v0eBEKq9UL2g+V9tBSr74DDcVZdFue43KtPR1Q3KbjQU1M0Yj2+gXgZgmAnRDoWVTx+K/hN2P41vfdSnsVkqEmriEj9QcWttbZn/y99tqzs5fr2UR54FfJ6gmlP+1evMkQS4yMO4A+qxVAWkJoR51w3k3Eir6Dst0O2/JNzQ5wHkZfw15CONVP1qPpP1igm2dqG84FiskANuUvxQDWCU83NvXuhUsErFVOsJzZS/fZLvpldmjwpBv5HYKVEBkKfwFvNKNVw2YTIZhZcsWkoi3UtUbX+PK9eUFxubLlw1bl/vLs0N02CRBrSbKJnCF1FQ4PnWWCQ/XSWk+ST62yabhKliav+Iz2bCSCDY4lFL3p+Y+815ySOm3qsPkaLVdY7wOkOOM15a+u2FelGYVlcNnfIv+tNMWMphNcLONq33t/6IpBqzL7G2AAbE4jAMJyu6HNLoLKzLLpqq/Tx7ypTAZxiG+mx/AS8jTU1pWS0FsGJLvYaIUIpddWnEPYSrefuzw0+NoaJ5WfXdvDEi7zxQD5H2JYSugUVlyHrGH0BrqWQaOI+dv5bT8+d/PvJy+od7rISAnAlf9nDpysapyMSfEkpIzzyBNygOV7KAb7kT3LpP7aw=
+  on:
+    tags: true
+    repo: billymoon/nsp-db
